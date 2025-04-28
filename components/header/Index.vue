@@ -1,5 +1,5 @@
 <template>
-  <div class="w-xs mx-auto px-20 pt-10">
+  <div class="w-xs mx-auto px-20">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150">
       <path
         fill="none"
