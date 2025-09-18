@@ -1,24 +1,35 @@
 <template>
-  <div class="w-xs mx-auto px-20">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150">
-      <path
-        fill="none"
-        stroke="#A645A2"
-        stroke-width="15"
-        stroke-linecap="round"
-        stroke-dasharray="300 385"
-        stroke-dashoffset="0"
-        d="M275 75c0 31-27 50-50 50-58 0-92-100-150-100-28 0-50 22-50 50s23 50 50 50c58 0 92-100 150-100 24 0 50 19 50 50Z"
+  <div class="mb-16">
+    <!-- Logo Animation -->
+    <div class="relative mb-8">
+      <div class="w-32 h-32 mx-auto relative">
+        <div
+          class="absolute inset-0 border-4 border-cyan-500/30 rounded-full animate-spin-slow"
+        ></div>
+        <div
+          class="absolute inset-2 border-2 border-violet-400/50 rounded-full animate-spin-reverse"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Name with Neon Effect -->
+    <div class="text-center">
+      <h1
+        class="text-4xl md:text-6xl font-semibold font-exo mb-4 bg-gradient-to-r from-cyan-500 via-violet-400 to-purple-400 bg-clip-text text-transparent animate-fade-in"
       >
-        <animate
-          attributeName="stroke-dashoffset"
-          calcMode="spline"
-          dur="2"
-          values="685;-685"
-          keySplines="0 0 1 1"
-          repeatCount="indefinite"
-        ></animate>
-      </path>
-    </svg>
+        Erlan Azhari
+      </h1>
+      <div class="relative inline-block">
+        <p
+          class="text-lg md:text-xl text-gray-300 font-light tracking-wide relative z-10"
+        >
+          Software Engineer
+        </p>
+        <!-- Neon Underline -->
+        <div
+          class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-pulse"
+        ></div>
+      </div>
+    </div>
   </div>
 </template>
