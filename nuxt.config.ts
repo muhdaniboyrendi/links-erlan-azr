@@ -3,9 +3,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
-  future: {
-    compatibilityVersion: 4,
-  },
   devtools: { enabled: true },
   css: ["~/assets/css/main.css", "bootstrap-icons/font/bootstrap-icons.css"],
   vite: {
@@ -13,7 +10,7 @@ export default defineNuxtConfig({
   },
   modules: ["@nuxtjs/seo", "nuxt-og-image"],
   site: {
-    url: "https://erlan-azr.vercel.app",
+    url: "https://links.erlanazhari.my.id",
     name: "Erlan Azhari - Links",
     description:
       "Full Stack Developer specializing in modern web technologies.",
