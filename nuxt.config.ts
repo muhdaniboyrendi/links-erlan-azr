@@ -8,25 +8,10 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  modules: ["@nuxtjs/seo", "nuxt-og-image"],
-  site: {
-    url: "https://links.erlanazhari.my.id",
-    name: "Erlan Azhari - Links",
-    description:
-      "Full Stack Developer specializing in modern web technologies.",
-    defaultLocale: "id",
-  },
-  ogImage: {
-    enabled: true,
-    defaults: {
-      component: "OgImageTemplate",
-      width: 1200,
-      height: 630,
-    },
-  },
   app: {
     head: {
       title: "Erlan Azhari - Links",
+      link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
       meta: [
         {
           name: "description",

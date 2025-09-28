@@ -2,7 +2,7 @@
   <div class="w-full max-w-md mx-auto mb-16">
     <div class="space-y-4">
       <SocialsSocialCard
-        href="https://erlan-azr.vercel.app/"
+        href="https://erlanazhari.my.id/"
         icon="bi-code-slash"
         title="Personal Website"
         description="Portfolio & Projects"
