@@ -44,12 +44,12 @@ onUnmounted(() => {
       <!-- Profession with rotation animation -->
       <div class="relative inline-flex justify-center items-center h-8">
         <Transition name="profession" mode="out-in">
-          <p
+          <h2
             :key="currentProfession"
             class="md:text-lg text-gray-300 font-light tracking-wide relative z-10 absolute"
           >
             {{ currentProfession }}
-          </p>
+          </h2>
         </Transition>
 
         <!-- Neon Underline -->
