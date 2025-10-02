@@ -1,11 +1,15 @@
+<!-- SocialsSocialCard.vue -->
 <script setup>
 const props = defineProps({
   href: String,
   icon: String,
   title: String,
   description: String,
-  color: String,
-  glow: String,
+  iconBg: String,
+  iconColor: String,
+  borderColor: String,
+  gradientBg: String,
+  titleHover: String,
 });
 </script>
 
@@ -13,85 +17,43 @@ const props = defineProps({
   <a
     :href="href"
     target="_blank"
-    class="group block relative overflow-hidden rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-500 hover:scale-105"
-    :class="`hover:shadow-2xl hover:shadow-${glow}-500/25`"
+    class="group relative rounded-2xl bg-gray-900 border transition-all duration-500 hover:scale-105 overflow-hidden"
+    :class="borderColor"
   >
-    <!-- Background Gradient -->
-    <div
-      class="absolute inset-0 bg-gradient-to-r transition-opacity duration-500"
-      :class="color"
-    ></div>
-
-    <div
-      class="absolute inset-0 bg-dark opacity-90 group-hover:opacity-100 transition-opacity duration-500"
-    ></div>
-
-    <!-- Neon Border Effect -->
+    <!-- Background Gradient on Hover -->
     <div
       class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-    >
-      <div
-        class="absolute inset-0 rounded-2xl bg-gradient-to-r p-px"
-        :class="color"
-      >
-        <div class="rounded-2xl bg-slate-900/50 h-full w-full"></div>
-      </div>
-    </div>
+      :class="gradientBg"
+    ></div>
 
     <!-- Content -->
-    <div class="relative p-6 flex items-center space-x-4">
-      <!-- Icon with Glow -->
-      <div class="text-4xl relative">
-        <div
-          class="absolute inset-0 blur-lg opacity-50 group-hover:opacity-100 transition-opacity duration-500"
-          :class="`text-${glow}-400`"
-        >
-          <i class="bi" :class="icon"></i>
-        </div>
-        <div class="relative">
-          <i
-            class="bi"
-            :class="[
-              icon,
-              'bg-linear-to-br bg-clip-text text-transparent',
-              color,
-            ]"
-          ></i>
-        </div>
+    <div class="relative z-10 flex items-center gap-4 p-5" :class="gradientBg">
+      <!-- Icon -->
+      <div
+        class="flex-shrink-0 w-14 h-14 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
+        :class="iconBg"
+      >
+        <i
+          class="bi text-2xl group-hover:text-white transition-colors duration-300"
+          :class="[icon, iconColor]"
+        ></i>
       </div>
 
       <!-- Text Content -->
       <div class="flex-1">
         <h3
-          class="text-xl font-semibold text-white group-hover:text-white/90 transition-colors duration-300"
+          class="text-lg font-bold text-white mb-1 transition-all duration-300"
+          :class="titleHover"
         >
           {{ title }}
         </h3>
-        <p
-          class="text-gray-400 group-hover:text-gray-300 transition-colors duration-300"
-        >
-          {{ description }}
-        </p>
+        <p class="text-gray-400 text-sm">{{ description }}</p>
       </div>
 
       <!-- Arrow Icon with Animation -->
-      <div
-        class="text-gray-400 group-hover:text-white transform group-hover:translate-x-1 group-hover:scale-110 transition-all duration-300"
-      >
-        <svg
-          class="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M17 8l4 4m0 0l-4 4m4-4H3"
-          ></path>
-        </svg>
-      </div>
+      <i
+        class="bi bi-arrow-right text-gray-400 group-hover:text-white transform transition-all duration-300 group-hover:translate-x-1"
+      ></i>
     </div>
 
     <!-- Shine Effect -->
