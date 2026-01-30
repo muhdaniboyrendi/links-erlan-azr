@@ -17,7 +17,7 @@ const props = defineProps({
   <a
     :href="href"
     target="_blank"
-    class="group relative rounded-2xl bg-gray-900 border transition-all duration-500 hover:scale-105 overflow-hidden"
+    class="group relative rounded-3xl bg-gray-900 border transition-all duration-500 overflow-hidden"
     :class="borderColor"
   >
     <!-- Background Gradient on Hover -->
@@ -27,10 +27,10 @@ const props = defineProps({
     ></div>
 
     <!-- Content -->
-    <div class="relative z-10 flex items-center gap-4 p-5" :class="gradientBg">
+    <div class="relative z-10 flex items-center gap-3 md:gap-4 p-3 md:p-4" :class="gradientBg">
       <!-- Icon -->
       <div
-        class="flex-shrink-0 w-14 h-14 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
+        class="flex-shrink-0 w-14 h-14 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
         :class="iconBg"
       >
         <i
@@ -52,7 +52,7 @@ const props = defineProps({
 
       <!-- Arrow Icon with Animation -->
       <i
-        class="bi bi-arrow-right text-gray-400 group-hover:text-white transform transition-all duration-300 group-hover:translate-x-1"
+        class="bi bi-arrow-right mr-3 text-gray-400 group-hover:text-white transform transition-all duration-300 group-hover:translate-x-1"
       ></i>
     </div>
 

@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  modules: ["@nuxtjs/sitemap"],
+  modules: ["@nuxtjs/sitemap", "@nuxt/image"],
   site: {
     url: "https://links.erlanazhari.my.id",
     name: "Erlan Azhari Links",

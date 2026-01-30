@@ -1,8 +1,19 @@
 <!-- Socials.vue -->
 <template>
-  <div class="w-full max-w-2xl mx-auto mb-16">
+  <div class="w-full max-w-2xl mx-auto mb-8 md:mb-10">
     <!-- Social Links -->
-    <div class="grid gap-4 mb-12">
+    <div class="grid gap-3 md:gap-4 mb-8 md:mb-10">
+      <!-- Business Badge -->
+      <div class="text-center">
+        <div
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-sky-400/30 bg-sky-400/10 backdrop-blur-sm"
+        >
+          <span class="text-sky-300 text-sm font-medium"
+            >Social Media Links</span
+          >
+        </div>
+      </div>
+
       <SocialsSocialCard
         href="https://erlanazhari.my.id/"
         icon="bi-code-slash"
@@ -64,19 +75,7 @@
       />
 
       <SocialsSocialCard
-        href="https://discord.gg/MfzpYpBV"
-        icon="bi-discord"
-        title="Discord"
-        description="Erlan Azr"
-        icon-bg="bg-gradient-to-br from-violet-400/20 to-purple-400/20"
-        icon-color="text-violet-400"
-        border-color="border-violet-400/20 hover:border-violet-400/50 hover:shadow-[0_0_40px_rgba(34,197,94,0.3)]"
-        gradient-bg="bg-gradient-to-br from-violet-400/5 to-purple-400/5"
-        title-hover="group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-green-400 group-hover:to-emerald-400 group-hover:bg-clip-text"
-      />
-
-      <SocialsSocialCard
-        href="https://discord.gg/MfzpYpBV"
+        href="https://www.tiktok.com/@erlan.azr?_r=1&_t=ZS-93Udhi6SGyD"
         icon="bi-tiktok"
         title="Tiktok"
         description="@erlan.azr"
@@ -89,29 +88,72 @@
     </div>
 
     <!-- Business Section -->
-    <div class="space-y-6">
+    <div>
       <!-- Business Badge -->
-      <div class="text-center">
+      <div class="text-center mb-3 md:mb-4">
         <div
-          class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-400/30 bg-purple-400/10 backdrop-blur-sm"
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-sky-400/30 bg-sky-400/10 backdrop-blur-sm"
         >
-          <span class="text-purple-300 text-sm font-medium">Business</span>
+          <span class="text-sky-300 text-sm font-medium">Business</span>
         </div>
       </div>
 
       <!-- Business Link -->
       <div class="grid gap-4">
-        <SocialsSocialCard
-          href="https://ea-invitation-landing.vercel.app/"
-          icon="bi-envelope-paper"
-          title="EA Invitation"
-          description="Digital Wedding Invitation"
-          icon-bg="bg-gradient-to-br from-cyan-400/20 to-purple-400/20"
-          icon-color="text-cyan-400"
-          border-color="border-purple-400/20 hover:border-purple-400/50 hover:shadow-[0_0_40px_rgba(168,85,247,0.3)]"
-          gradient-bg="bg-gradient-to-br from-cyan-400/5 to-purple-400/5"
-          title-hover="group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-cyan-400 group-hover:to-purple-400 group-hover:bg-clip-text"
-        />
+        <a
+          href="https://eainvitation.com"
+          target="_blank"
+          class="group relative rounded-3xl bg-gray-900 border transition-all duration-500 overflow-hidden border-sky-400/20 hover:border-sky-400/50 hover:shadow-[0_0_40px_rgba(6,182,212,0.3)]"
+        >
+          <!-- Background Gradient on Hover -->
+          <div
+            class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-cyan-400/5 to-sky-400/5"
+          ></div>
+
+          <!-- Content -->
+          <div
+            class="relative z-10 flex items-center gap-3 md:gap-4 p-3 md:p-4 bg-gradient-to-br from-cyan-400/5 to-sky-400/5"
+          >
+            <!-- Icon -->
+            <div
+              class="flex-shrink-0 w-14 h-14 rounded-2xl flex items-center justify-center transition-all duration-300 bg-gradient-to-br from-cyan-400/20 to-sky-400/20"
+            >
+              <NuxtImg
+                src="/ea-invitation-logo.webp"
+                width="40"
+                height="40"
+                loading="lazy"
+                placeholder
+              />
+            </div>
+
+            <!-- Text Content -->
+            <div class="flex-1">
+              <h3
+                class="text-lg font-bold text-white mb-1 transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-cyan-400 group-hover:to-sky-400 group-hover:bg-clip-text"
+              >
+                EA Invitation
+              </h3>
+              <p class="text-gray-400 text-sm">
+                Digital Wedding Invitation Platform
+              </p>
+            </div>
+
+            <!-- Arrow Icon with Animation -->
+            <i
+              class="bi bi-arrow-right mr-3 text-gray-400 group-hover:text-white transform transition-all duration-300 group-hover:translate-x-1"
+            ></i>
+          </div>
+
+          <!-- Shine Effect -->
+          <div
+            class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"
+            ></div>
+          </div>
+        </a>
       </div>
     </div>
   </div>

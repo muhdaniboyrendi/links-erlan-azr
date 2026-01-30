@@ -32,15 +32,15 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="mb-12">
+  <div class="mb-8 md:mb-10">
     <!-- Logo with Neon Effect -->
     <div class="relative mb-10">
       <div
-        class="h-32 aspect-square mx-auto relative rounded-full bg-linear-to-br from-cyan-400 to-purple-400 p-1"
+        class="h-32 aspect-square mx-auto relative rounded-full bg-linear-to-br from-cyan-400 to-sky-400 p-1"
       >
         <!-- Logo Glow -->
         <div
-          class="absolute inset-2 bg-gradient-to-br from-cyan-400/20 to-purple-400/20 rounded-full blur-xl"
+          class="absolute inset-2 bg-gradient-to-br from-cyan-400/20 to-sky-400/20 rounded-full blur-xl"
         ></div>
 
         <!-- Logo -->
@@ -52,25 +52,14 @@ onUnmounted(() => {
       </div>
     </div>
 
-    <!-- Name with Gradient & Neon Effect -->
-    <div class="text-center">
-      <h1
-        class="text-4xl md:text-6xl max-w-3xl font-extrabold mb-6 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent neon-text animate-fade-in"
-      >
-        Muhdani Boyrendi Erlan Azhari
-      </h1>
-
-      <!-- Profession with Badge Style -->
-      <div class="relative inline-flex justify-center items-center mb-4">
-        <Transition name="profession" mode="out-in">
-          <span
-            :key="currentProfession"
-            class="text-cyan-300 text-lg md:text-xl font-medium"
-          >
-            {{ currentProfession }}
-          </span>
-        </Transition>
-      </div>
+    <!-- Divider Line with Glow -->
+    <div class="relative">
+      <div
+        class="h-px bg-gradient-to-r from-transparent via-cyan-400/50 to-transparent"
+      ></div>
+      <div
+        class="absolute inset-0 h-px bg-gradient-to-r from-transparent via-cyan-400/20 to-transparent blur-sm"
+      ></div>
     </div>
   </div>
 </template>
