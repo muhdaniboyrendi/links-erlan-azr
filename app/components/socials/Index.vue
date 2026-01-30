@@ -116,7 +116,7 @@
           >
             <!-- Icon -->
             <div
-              class="flex-shrink-0 w-14 h-14 rounded-2xl flex items-center justify-center transition-all duration-300 bg-gradient-to-br from-cyan-400/20 to-sky-400/20"
+              class="flex-shrink-0 w-14 h-14 rounded-2xl flex items-center justify-center transition-all duration-300 bg-gradient-to-br from-cyan-400/20 to-sky-400/20 group-hover:scale-110"
             >
               <NuxtImg
                 src="/ea-invitation-logo.webp"
@@ -130,7 +130,7 @@
             <!-- Text Content -->
             <div class="flex-1">
               <h3
-                class="text-lg font-bold text-white mb-1 transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-cyan-400 group-hover:to-sky-400 group-hover:bg-clip-text"
+                class="text-lg font-bold text-white md:mb-1 transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-cyan-400 group-hover:to-sky-400 group-hover:bg-clip-text"
               >
                 EA Invitation
               </h3>

@@ -1,6 +1,6 @@
 <!-- Footer.vue -->
 <template>
-  <div class="text-center w-full max-w-2xl">
+  <div class="text-center w-full max-w-2xl px-4">
     <!-- Divider Line with Glow -->
     <div class="relative mb-8 md:mb-10">
       <div
@@ -13,8 +13,8 @@
 
     <!-- Copyright with Neon Effect -->
     <p class="text-gray-400 text-sm relative mb-3 md:mb-4">
-      &copy; 2026 by Muhdani Boyrendi Erlan Azhari. All rights reserved.</p
-    >
+      &copy; 2026 by Muhdani Boyrendi Erlan Azhari. All rights reserved.
+    </p>
 
     <!-- Source Code Link -->
     <a

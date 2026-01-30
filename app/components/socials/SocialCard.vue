@@ -42,7 +42,7 @@ const props = defineProps({
       <!-- Text Content -->
       <div class="flex-1">
         <h3
-          class="text-lg font-bold text-white mb-1 transition-all duration-300"
+          class="text-lg font-bold text-white md:mb-1 transition-all duration-300"
           :class="titleHover"
         >
           {{ title }}
