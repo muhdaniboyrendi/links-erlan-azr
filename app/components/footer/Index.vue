@@ -20,7 +20,7 @@
     <a
       href="https://github.com/muhdaniboyrendi/links-erlan-azr"
       target="_blank"
-      class="inline-flex items-center space-x-2 text-gray-400 hover:text-cyan-400 transition-colors duration-300 text-sm group"
+      class="inline-flex items-center space-x-2 text-gray-400 hover:text-cyan-400 transition-colors duration-300 text-xs group"
     >
       <span>Source Code</span>
       <i class="bi bi-box-arrow-up-right"></i>
