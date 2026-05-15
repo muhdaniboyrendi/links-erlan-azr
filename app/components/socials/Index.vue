@@ -3,7 +3,7 @@
   <div class="w-full max-w-2xl mx-auto mb-8 md:mb-10">
     <!-- Social Links -->
     <div class="grid gap-3 md:gap-4 mb-8 md:mb-10">
-      <!-- Business Badge -->
+      <!-- Badge -->
       <div class="text-center">
         <div
           class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-sky-400/30 bg-sky-400/10 backdrop-blur-sm"
@@ -152,6 +152,18 @@
             ></div>
           </div>
         </a>
+
+        <SocialsSocialCard
+          href="https://chaya-collection.netlify.app"
+          icon="bi-shop"
+          title="Chaya Collection"
+          description="Tailor & Sewing Tools"
+          icon-bg="bg-gradient-to-br from-[#A855F7]/20 to-[#FFD93D]/20"
+          icon-color="text-[#B4E4FF]"
+          border-color="border-[#A855F7]/20 hover:border-[#A855F7]/50 hover:shadow-[0_0_40px_rgba(180,228,255,0.3)]"
+          gradient-bg="bg-gradient-to-br from-[#A855F7]/5 to-[#FFD93D]/5"
+          title-hover="group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-[#B4E4FF] group-hover:to-[#A855F7] group-hover:bg-clip-text"
+        />
       </div>
     </div>
   </div>
